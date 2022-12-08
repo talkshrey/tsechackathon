@@ -66,7 +66,7 @@ export default function Meme() {
             redirect: 'follow'
             };
 
-            fetch("https://dementech.pythonanywhere.com/meme/", requestOptions)
+            fetch("https://localhost:8000/meme/", requestOptions)
             .then(response => response.json())
             .then(result => console.log(result))
             .catch(error => console.log('error', error));

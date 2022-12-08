@@ -39,7 +39,7 @@ export const Memories = () => {
     formdata.append("relation_with_patient", rel);
     formdata.append("message", desc);
 
-    fetch("http://dementech.pythonanywhere.com/scrapbook/", requestOptions)
+    fetch("http://localhost:8000/scrapbook/", requestOptions)
     .then(response => response.json())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
@@ -57,7 +57,7 @@ export const Memories = () => {
 
   const handleClick = () => {
 
-    fetch("http://dementech.pythonanywhere.com/videocall", requestOptions2)
+    fetch("http://localhost:8000/videocall", requestOptions2)
       .then(response => response.json())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));

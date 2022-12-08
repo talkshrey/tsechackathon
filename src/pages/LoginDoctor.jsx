@@ -21,7 +21,7 @@ export const LoginDoctor = () => {
   
     let config = {
       method: 'post',
-      url: 'http://dementech.pythonanywhere.com/login/',
+      url: 'http://localhost:8000/login/',
       headers: { 
           'Content-Type': 'application/json'
       },
